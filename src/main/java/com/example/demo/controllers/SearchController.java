@@ -37,6 +37,7 @@ public class SearchController {
         itemList.add(new Item(19,"Tent", "assets/images/tent.jpeg", ""));
         itemList.add(new Item(20,"Cup", "assets/images/cup.jpeg",""));
         itemList.add(new Item(21,"Bowl", "assets/images/bowl.jpeg", ""));
+        itemList.add(new Item(22,"Bowl", "assets/images/bowl.jpeg", ""));
 
         return itemList;
     }
