@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import sun.plugin.javascript.navig.Array;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,7 @@ public class SearchController {
 
     @RequestMapping("/search/**")
     @ResponseBody
-    public List returnItems(@RequestParam(value = "item", defaultValue = "all") String name) {
+    public ArrayList<Item> returnItems(@RequestParam(value = "item", defaultValue = "all") String name) {
         ArrayList<Item> itemList = new ArrayList<Item>();
         ArrayList<Item> filteredList = new ArrayList<Item>();
 
