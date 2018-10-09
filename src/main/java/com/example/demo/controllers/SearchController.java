@@ -43,7 +43,7 @@ public class SearchController {
 
         for (int i = 0; i < itemList.size(); i++) {
             Item item = itemList.get(i);
-            if (item.getTitle().contains(name)) {
+            if (item.getTitle().toLowerCase().contains(name.toLowerCase())) {
                 filteredList.add(item);
             }
         }
